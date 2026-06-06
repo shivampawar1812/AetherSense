@@ -1,12 +1,19 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, UploadFile, File
+from services.file_service import save_pdf
 
 router = APIRouter(
     prefix="/upload",
     tags=["Upload"]
 )
 
-@router.get("/")
-def upload_status():
+@router.post("/")
+async def upload_paper(
+    file: UploadFile = File(...)
+):
+    result = save_pdf(file)
+
     return {
-        "status": "Upload endpoint ready"
+        "paper_id": result["paper_id"],
+        "filename": result["filename"],
+        "status": "uploaded"
     }
