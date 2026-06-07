@@ -1,8 +1,9 @@
 from fastapi import APIRouter, HTTPException
 
-from services.json_service import (
-    load_parsed_data
-)
+from services.json_service import load_parsed_data
+from services.embedding_service import generate_embedding
+from services.chroma_service import search_similar
+from services.json_service import load_parsed_data
 
 router = APIRouter(
     prefix="/analysis",
@@ -25,3 +26,34 @@ def get_paper_data(
         )
 
     return data
+
+
+@router.get("/{paper_id}/similar")
+def similar_papers(
+    paper_id: str
+):
+    paper = load_parsed_data(
+        paper_id
+    )
+
+    if not paper:
+        raise HTTPException(
+            status_code=404,
+            detail="Paper not found"
+        )
+
+    text = (
+        paper["title"]
+        + "\n"
+        + paper["abstract"]
+    )
+
+    embedding = generate_embedding(
+        text
+    )
+
+    results = search_similar(
+        embedding
+    )
+
+    return results
