@@ -77,9 +77,9 @@ export default function Hero() {
                     }}
                     className="
                         text-5xl
-                        md:text-4xl
+                        md:text-2xl
                         font-bold
-                        mt-8
+                        mt-2.5
                     "
                 >
                     Discover What's Truly Novel.
@@ -99,10 +99,10 @@ export default function Hero() {
                         duration: 0.8,
                     }}
                     className="
-                        text-zinc-400
-                        text-xl
-                        mt-8
-                        max-w-3xl
+                        text-zinc-350
+                        text-0.5xl
+                        mt-6
+                        max-w-2xl
                         mx-auto
                     "
                 >
