@@ -1,8 +1,8 @@
-# AetherReview
+# AetherSense
 
 > **AI-Powered Research Novelty & Literature Intelligence Platform**
 
-AetherReview is an end-to-end AI system that helps researchers evaluate the novelty of academic work using Retrieval-Augmented Generation (RAG), semantic similarity search, literature-grounded reasoning, and Large Language Models.
+AetherSense is an end-to-end AI system that helps researchers evaluate the novelty of academic work using Retrieval-Augmented Generation (RAG), semantic similarity search, literature-grounded reasoning, and Large Language Models.
 
 Upload a research paper and receive a comprehensive novelty report containing summaries, related literature, similarity rankings, contributions, research gaps, future research directions, and an estimated novelty score.
 
@@ -124,7 +124,7 @@ Unified Novelty Report
 ## 📂 Project Structure
 
 ```text
-AetherReview/
+AetherSense/
 │
 ├── backend/
 │   ├── routes/
@@ -225,7 +225,7 @@ Support evidence-based research discovery.
 
 ## 📜 Disclaimer
 
-AetherReview provides literature-grounded insights to assist researchers. Novelty scores are intended as decision-support signals and should not replace formal peer review.
+AetherSense provides literature-grounded insights to assist researchers. Novelty scores are intended as decision-support signals and should not replace formal peer review.
 
 ---
 
@@ -243,5 +243,5 @@ AetherReview provides literature-grounded insights to assist researchers. Novelt
 
 Built with the vision of transforming weeks of literature exploration into minutes of actionable intelligence through AI-powered research analysis.
 
-**AetherReview — Illuminating Research Through AI-Powered Novelty Intelligence.**
+**AetherSense — Illuminating Research Through AI-Powered Novelty Intelligence.**
 ---
