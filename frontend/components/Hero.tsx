@@ -106,7 +106,7 @@ export default function Hero() {
                         mx-auto
                     "
                 >
-                    From papers to possibilities - identify gaps, conncetions, and novel contributions instantly.
+                    From papers to possibilities - identify gaps, connections, and novel contributions instantly.
                 </motion.p>
 
                 <motion.div

@@ -63,23 +63,23 @@ export default async function ReportPage(
                         </Link>
 
                         <p className="
-            uppercase
-            tracking-[0.3em]
-            text-sm
-            text-[#D4145A]
-            mt-10
-            mb-4
-        ">
+                            uppercase
+                            tracking-[0.3em]
+                            text-sm
+                            text-[#D4145A]
+                            mt-10
+                            mb-4
+                        ">
                             Novelty Intelligence Report
                         </p>
 
                         <h1 className="
-            text-4xl
-            md:text-5xl
-            font-bold
-            mb-4
-            max-w-4xl
-        ">
+                            text-4xl
+                            md:text-5xl
+                            font-bold
+                            mb-4
+                            max-w-4xl
+                        ">
                             {report.paper_info.title}
                         </h1>
 
@@ -92,19 +92,19 @@ export default async function ReportPage(
                     {/* Logo */}
 
                     <div className="
-        flex
-        justify-center
-        md:justify-end
-    ">
+                        flex
+                        justify-center
+                        md:justify-end
+                    ">
 
                         <Image
                             src="/AetherSense Short.png"
                             alt="AetherSense"
-                            width={140}
-                            height={140}
+                            width={200}
+                            height={200}
                             className="
-                w-24
-                md:w-32
+                w-50
+                md:w-50
                 h-auto
                 object-contain
                 opacity-90
